@@ -1,0 +1,17 @@
+﻿<configuration>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_Image" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://mspkickoff2014-benimicincek.azurewebsites.net/Image.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_Image"
+        contract="ImageService.Image" name="BasicHttpBinding_Image" />
+    </client>
+  </system.serviceModel>
+</configuration>
